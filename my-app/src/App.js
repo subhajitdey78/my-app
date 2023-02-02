@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
 import Welcome from './Welcome';
+import Navbar from './Navbar';
+import Banner from './Banner';
+import CardSection from './CardSection';
+import AppSection from './AppSection';
+import Footer from './Footer';
+
 
 // class Welcome extends React.Component{
   // constructor(props){
@@ -14,8 +20,14 @@ import Welcome from './Welcome';
 function App() {
   return (
     <div className="app">
-      <Welcome title = "Mr" name = "John" age ={20} />
-      <Welcome title = "Mr" name = "Peter" age ={40} />
+      {/* <Welcome title = "Mr" name = "John" age ={20} />
+      <Welcome title = "Mr" name = "Peter" age ={40} /> */}
+
+      <Navbar/>
+      <Banner/>
+      <CardSection/>
+      <AppSection/>
+      <Footer/>
     </div>
   );
 }
